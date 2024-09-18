@@ -1,0 +1,7 @@
+.full-name {
+  display: none;
+}
+
+.insitution:hover .full-name {
+  display: block;
+}
