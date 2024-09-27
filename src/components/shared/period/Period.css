@@ -1,0 +1,6 @@
+.period {
+  display: inline-flex;
+  span {
+    margin: auto 0.25em;
+  }
+}
