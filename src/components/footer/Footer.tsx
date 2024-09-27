@@ -1,12 +1,18 @@
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FC } from 'react';
 import { DesignerData, DeveloperData } from './data';
+import './Footer.css';
 
 const Footer: FC = () => {
   return (
-    <div>
+    <div className="footer">
       <div className="designer">
         <span>Designed by</span>
-        <a href={DesignerData.Profile}>{DesignerData.Name}</a>
+        <span>{DesignerData.Name}</span>
+        <a href={DesignerData.Profile}>
+          <FontAwesomeIcon icon={faLink} />
+        </a>
       </div>
       <div className="developer">
         <span>Developed by</span>

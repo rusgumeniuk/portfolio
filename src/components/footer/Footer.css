@@ -1,0 +1,9 @@
+div.footer {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+div.footer > div > span,
+a {
+  margin-right: 0.2rem;
+}
