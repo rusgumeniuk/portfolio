@@ -1,0 +1,29 @@
+.personal-info {
+  margin: 1rem;
+}
+
+.name {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin: 0.2rem;
+}
+
+.name > span {
+  margin: 0 1rem;
+}
+
+.role {
+  display: flex;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+}
+
+.location * {
+  font-weight: normal;
+}
