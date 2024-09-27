@@ -1,0 +1,27 @@
+.experience {
+  margin: 0.5rem;
+}
+
+.job-head {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-responsibilities-container {
+  margin: 0.5rem 2rem;
+}
+
+.responsibilities {
+  padding: 0 0 0 1.5rem;
+  font-size: smaller;
+}
+
+.responsibilities > li::after {
+  content: ';';
+}
+
+.additional-responsibilities {
+  font-size: smaller;
+  list-style-type: square;
+}
