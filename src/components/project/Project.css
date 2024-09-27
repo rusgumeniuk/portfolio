@@ -1,0 +1,47 @@
+.project {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.project-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+button.expander {
+  all: unset;
+}
+
+button.expander:focus {
+  outline: revert;
+}
+
+button.enabled > *:hover {
+  background-color: brown;
+}
+
+button.disabled > *:hover {
+  background-color: green;
+}
+
+.project-title {
+  margin: 0 2rem;
+  flex-shrink: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+.project-technologies {
+  padding: 0.5rem 0.2rem;
+
+  > li {
+    display: inline-flex;
+    flex-flow: wrap;
+    margin-right: 0.5rem;
+    margin-bottom: 0.2rem;
+    marker: none;
+    list-style-type: none;
+  }
+}
