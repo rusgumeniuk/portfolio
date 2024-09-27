@@ -1,6 +1,9 @@
 div.footer {
-  display: inline-flex;
+  display: flex;
   gap: 0.5rem;
+  justify-content: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 div.footer > div > span,

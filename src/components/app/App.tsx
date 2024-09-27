@@ -12,23 +12,25 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <aside className="sidebar">
-        <div className="portrait">
-          <Portrait />
+      <div className="wrapper">
+        <aside className="sidebar">
+          <div className="portrait">
+            <Portrait />
+          </div>
+          <Summary />
+          <Education />
+          <Languages />
+        </aside>
+        <div className="body">
+          <header>
+            <PersonalInfo />
+            <Contacts />
+          </header>
+          <main>
+            <Experience />
+            <Skills />
+          </main>
         </div>
-        <Summary />
-        <Education />
-        <Languages />
-      </aside>
-      <div className="body">
-        <header>
-          <PersonalInfo />
-          <Contacts />
-        </header>
-        <main>
-          <Experience />
-          <Skills />
-        </main>
       </div>
       <footer>
         <Footer />
