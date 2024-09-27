@@ -11,6 +11,7 @@ export const Certificates: Certificate[] = [
     title: 'Binary Studio Academy .NET course',
     issuedOn: new Date(2020, 8),
     issuer: 'Binary Studio',
+    link: 'https://drive.google.com/file/d/1F4RcwC1e7p59_tPNEpRn93WEYAlUDKrf/view?usp=sharing',
   },
   {
     title: 'Azure 204',
@@ -21,7 +22,7 @@ export const Certificates: Certificate[] = [
 
 export const Diplomas: Diploma[] = [
   {
-    qualification: 'Bachelor degree',
+    qualification: `Bachelor's degree`,
     completionYear: 2020,
     subject: 'Software engineering',
     institution: {

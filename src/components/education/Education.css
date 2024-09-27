@@ -1,7 +1,65 @@
+.education {
+  margin: 0.5rem;
+}
+
+h3,
+h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
 .full-name {
   display: none;
 }
 
+.insitution {
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+
 .insitution:hover .full-name {
   display: block;
+}
+
+.diploma {
+  margin: 0.5rem 0;
+
+  * {
+    margin-right: 0.2rem;
+  }
+}
+
+.certificates {
+  display: flex;
+  flex-direction: column;
+}
+
+.certificate {
+  margin: 0.5rem 0;
+}
+
+.certificate-title > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.certificate-issuer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0.5rem;
+
+  span {
+    margin-right: 0.3rem;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 1490px) {
+  .insitution {
+    padding: 0;
+  }
+
+  .certificate-issuer {
+    padding: 0;
+  }
 }
