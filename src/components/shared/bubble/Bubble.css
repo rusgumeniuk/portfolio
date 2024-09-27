@@ -1,0 +1,20 @@
+.bubble {
+  padding: 0.35rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+}
+
+.bubble:hover {
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+}
+
+@media print {
+  .bubble {
+    font-size: 0.75rem;
+  }
+}
