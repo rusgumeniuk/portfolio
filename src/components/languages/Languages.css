@@ -1,0 +1,14 @@
+.languages {
+  margin: 0.5rem;
+}
+
+.language {
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.language-title,
+.language-level {
+  text-transform: capitalize;
+}
