@@ -8,7 +8,7 @@ export const Jobs: Job[] = [
       startedOn: new Date(2020, 7),
       endedOn: new Date(2024, 9, 15),
     },
-    position: 'Fullstack .NET developer',
+    position: 'Full-stack .NET developer',
     projects: [
       {
         title: '#1',
@@ -43,7 +43,7 @@ export const Jobs: Job[] = [
           Technologies.Java,
         ],
         responsibilities: [
-          'Fix bugs and add new features on both backend and frontend.',
+          'Fix bugs and add new features on both backend and frontend',
         ],
       },
       {
@@ -75,18 +75,17 @@ export const Jobs: Job[] = [
           'Create unit and integration tests for the developed features',
           'Collaborate with other backend and frontend developers, cloud and QA engineers',
           'Conduct code reviews for team members',
-          'Develop custom application metrics and dashboards in Grafana, integrate Grafana alerts with MS Teams',
+          'Develop custom application metrics and dashboards in Grafana, and integrate Grafana alerts with MS Teams',
           'Create and discuss Architecture Decision Records (ADR)',
-          'Develop and demonstrate various Proof-Of-Concepts (PoCs)',
-          'Support and resolve issues with IdentityServer 4',
-          'Migrate components of the old system from .NET Framework 4.7 to modern frameworks',
+          'Develop and demonstrate various Proof-of-Concepts (PoC)',
+          'Migrate components of the old system from .NET Framework 4.7 to modern frameworks; support and resolve issues with IdentityServer 4',
           'Participate in the migration from GitLab to GitHub, including creating GitHub actions',
           'Create documentation; migrate business logs from Amazon FSx to OpenSearch',
         ],
       },
     ],
     additionalResponsibilities: [
-      'Participate in the internal academy as a lecture owner, check homeworks',
+      'Participate in the internal academy as a lecture owner, check homework assignments',
       'Participate in the internal mentorship programm as a mentor',
     ],
   },

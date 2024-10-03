@@ -1,27 +1,47 @@
-.experience {
-  margin: 0.5rem;
+.job {
+  margin-top: 0.5rem;
 }
 
 .job-head {
-  margin: 0 1rem;
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.job-position {
+  text-wrap: nowrap;
 }
 
 .additional-responsibilities-container {
-  margin: 0.5rem 2rem;
+  margin: 0rem 1rem;
 }
 
-.responsibilities {
-  padding: 0 0 0 1.5rem;
-  font-size: smaller;
-}
-
-.responsibilities > li::after {
-  content: ';';
+.additional-responsibilities-container > .title {
+  font-size: 0.9rem;
 }
 
 .additional-responsibilities {
   font-size: smaller;
   list-style-type: square;
+}
+
+.additional-responsibilities > li::after {
+  content: ';';
+}
+
+.projects-container {
+  margin: 1rem 0 1rem 0.5rem;
+}
+
+@media (max-width: 1500px) {
+  .job-head {
+    margin: 0 0.5rem;
+    display: block;
+  }
+
+  .job-period {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+  }
 }
