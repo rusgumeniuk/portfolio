@@ -3,8 +3,7 @@ const PersonalInfo = {
     FirstName: 'Ruslan',
     LastName: 'Humeniuk',
   },
-  Role: 'Software Engineer',
-  Location: 'Ukraine',
+  Roles: ['Software engineer', 'Full-stack .NET developer'],
 };
 
 export default PersonalInfo;

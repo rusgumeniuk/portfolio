@@ -7,23 +7,23 @@
   display: flex;
   justify-content: center;
   margin: 0.2rem;
+  gap: 1rem;
+  font-family: 'Now', sans-serif;
 }
 
-.name > span {
-  margin: 0 1rem;
+.roles {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Now', sans-serif; /* TODO: use variables? */
 }
 
 .role {
-  display: flex;
-  justify-content: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-wrap: nowrap;
 }
 
-.location {
-  display: flex;
-  justify-content: center;
-}
-
-.location * {
-  font-weight: normal;
+.roles > div:not(:last-child)::after {
+  content: ' | ';
 }

@@ -8,16 +8,12 @@ const PersonalInfo: FC = () => {
       <h1 className="name">
         <span>{Info.Name.FirstName}</span> <span>{Info.Name.LastName}</span>
       </h1>
-      <h4 className="role">
-        <span>
-          <strong>{Info.Role}</strong>
-        </span>
-      </h4>
-      <div className="location">
-        <span>Based in&nbsp;</span>
-        <span>
-          <strong>{Info.Location}</strong>
-        </span>
+      <div className="roles">
+        {Info.Roles.map((role) => (
+          <div className="role" key={role}>
+            {role}
+          </div>
+        ))}
       </div>
     </div>
   );
