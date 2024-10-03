@@ -1,6 +1,15 @@
 .period {
   display: inline-flex;
-  span {
-    margin: auto 0.25em;
-  }
+}
+
+.period span {
+  margin: auto 0.25em;
+}
+
+.period > .date {
+  flex-shrink: 0;
+}
+
+.period span em {
+  font-style: normal;
 }
