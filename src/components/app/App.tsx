@@ -17,7 +17,7 @@ function App() {
           <div className="portrait">
             <Portrait />
           </div>
-          <Summary />
+          <Skills />
           <Education />
           <Languages />
         </aside>
@@ -27,8 +27,8 @@ function App() {
             <Contacts />
           </header>
           <main>
+            <Summary />
             <Experience />
-            <Skills />
           </main>
         </div>
       </div>
