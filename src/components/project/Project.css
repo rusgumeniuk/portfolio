@@ -5,6 +5,7 @@
 
 .project-head {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 
@@ -29,19 +30,29 @@ button.disabled > *:hover {
   flex-shrink: 0;
 }
 
-ul {
-  margin: 0;
+.project-technologies {
+  margin: 0.2rem 0.5rem;
+  font-size: 0.7rem;
 }
 
-.project-technologies {
-  padding: 0.5rem 0.2rem;
+.responsibilities {
+  margin: 0 1rem;
+  padding: 0 0 0 1.5rem;
+  font-size: 0.82rem;
+}
 
-  > li {
-    display: inline-flex;
-    flex-flow: wrap;
-    margin-right: 0.5rem;
-    margin-bottom: 0.2rem;
-    marker: none;
-    list-style-type: none;
+.responsibilities > li::after {
+  content: ';';
+}
+
+@media (max-width: 1500px) {
+  .project-head {
+    display: block;
+  }
+
+  .project-period {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8rem;
   }
 }
