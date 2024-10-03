@@ -3,4 +3,5 @@ export interface Contacts {
   linkedIn: string;
   site: string | null;
   github: string;
+  location: string;
 }

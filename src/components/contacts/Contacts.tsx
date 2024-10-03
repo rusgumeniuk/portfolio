@@ -1,7 +1,11 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faEnvelope,
+  faGlobe,
+  faLocationDot,
+} from '@fortawesome/free-solid-svg-icons';
 import { FC } from 'react';
+import Icon from '../shared/icon/Icon';
 import './Contacts.css';
 import { ContactsData } from './data';
 
@@ -9,25 +13,30 @@ const Contacts: FC = () => {
   return (
     <div className="contacts">
       <div className="contact email">
-        <FontAwesomeIcon icon={faEnvelope} />
-        <a href={`mailto:${ContactsData.email}`} className="email">
-          Email
-        </a>
+        <Icon
+          iconTitle={faEnvelope}
+          link={`mailto:${ContactsData.email}`}
+          text="Email"
+        />
       </div>
       <div className="contact link">
-        <FontAwesomeIcon icon={faLinkedin} />
-        <a href={ContactsData.linkedIn}>LinkedIn</a>
+        <Icon
+          iconTitle={faLinkedin}
+          link={ContactsData.linkedIn}
+          text="LinkedIn"
+        />
       </div>
       <div className="contact link">
-        <FontAwesomeIcon icon={faGithub} />
-        <a href={ContactsData.github}>GitHub</a>
+        <Icon iconTitle={faGithub} link={ContactsData.github} text="GitHub" />
       </div>
       {ContactsData.site && (
-        <div className="contact site">
-          <FontAwesomeIcon icon={faGlobe} />
-          <a href={ContactsData.site}>Site</a>
+        <div className="contact link">
+          <Icon iconTitle={faGlobe} link={ContactsData.site} text="Site" />
         </div>
       )}
+      <div className="contact location">
+        <Icon iconTitle={faLocationDot} text={ContactsData.location} />
+      </div>
     </div>
   );
 };

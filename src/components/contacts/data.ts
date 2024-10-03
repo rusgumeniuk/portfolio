@@ -5,4 +5,5 @@ export const ContactsData: Contacts = {
   linkedIn: 'https://www.linkedin.com/in/ruslan-humeniuk-a43345151/',
   site: '#',
   github: 'https://github.com/rusgumeniuk',
+  location: 'Ukraine',
 };
