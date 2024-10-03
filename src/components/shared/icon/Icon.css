@@ -1,0 +1,14 @@
+.icon-container {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.icon-container > .icon {
+  height: 1rem;
+}
+
+.icon-container > a.link {
+  text-decoration: none;
+  color: inherit;
+}
