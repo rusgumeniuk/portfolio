@@ -1,0 +1,12 @@
+.divider-container {
+  position: relative;
+  margin: 0 0.5rem;
+}
+
+.section-divider::after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 1px;
+}
