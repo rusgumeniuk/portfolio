@@ -1,0 +1,23 @@
+.skill-list {
+  padding: 0;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.skill {
+  text-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  .skill {
+    text-wrap: balance;
+  }
+}
+
+.skill:not(:last-child)::after {
+  content: ' ·';
+}
