@@ -1,12 +1,14 @@
 import { FC } from 'react';
+import Divider from '../shared/divider/Divider';
 import { AboutMe } from './data';
 import './Summary.css';
 
 const Summary: FC = () => {
   return (
     <div className="summary">
-      <h4 className="title">About me</h4>
-      <p>{AboutMe}</p>
+      <h3 className="title">Summary</h3>
+      <Divider />
+      <p className="summary-text">{AboutMe}</p>
     </div>
   );
 };
