@@ -12,6 +12,10 @@
   text-wrap: nowrap;
 }
 
+.job-period{
+  font-size: 0.9rem;
+}
+
 .additional-responsibilities-container {
   margin: 0rem 1rem;
 }
@@ -42,6 +46,5 @@
   .job-period {
     display: flex;
     justify-content: flex-end;
-    font-size: 0.8rem;
   }
 }

@@ -9,6 +9,10 @@
   justify-content: space-between;
 }
 
+.project-period {
+  font-size: 0.9rem;
+}
+
 button.expander {
   all: unset;
 }
