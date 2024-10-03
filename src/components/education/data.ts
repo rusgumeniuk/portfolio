@@ -28,7 +28,7 @@ export const Diplomas: Diploma[] = [
     institution: {
       shortName: 'Kyiv Polytechnic Institute',
       fullName:
-        'National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute',
+        'National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"',
     },
   },
 ];

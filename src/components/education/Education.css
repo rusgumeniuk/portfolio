@@ -1,32 +1,51 @@
-.education {
-  margin: 0.5rem;
-}
-
 h3,
 h4 {
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
 
-.full-name {
-  display: none;
-}
-
-.insitution {
-  display: inline-block;
-  padding-left: 0.5rem;
-}
-
-.insitution:hover .full-name {
-  display: block;
+.diplomas {
+  margin-top: 0.5rem;
 }
 
 .diploma {
-  margin: 0.5rem 0;
+  margin: 0 0.2rem 0.5rem 0.5rem;
+}
 
-  * {
-    margin-right: 0.2rem;
-  }
+.diploma-main {
+  display: inline-block;
+}
+
+.diploma-main > span:not(:last-child) {
+  margin-right: 0.2rem;
+}
+
+.diploma-details {
+  display: inline-block;
+  position: relative;
+}
+
+.diploma-details > span:not(:last-child) {
+  margin-right: 0.2rem;
+}
+
+.hint {
+  position: absolute;
+  top: -100%;
+  right: -150%;
+
+  background-color: lightblue;
+  padding: 0.2rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+
+  text-wrap: nowrap;
+  visibility: hidden;
+  font-size: 0.8rem;
+}
+
+.diploma-details:hover .hint {
+  visibility: visible;
 }
 
 .certificates {
@@ -35,7 +54,7 @@ h4 {
 }
 
 .certificate {
-  margin: 0.5rem 0;
+  margin: 0 0.2rem 0.5rem 0.5rem;
 }
 
 .certificate-title > a {
@@ -46,12 +65,22 @@ h4 {
 .certificate-issuer {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0.5rem;
 
   span {
     margin-right: 0.3rem;
     flex-shrink: 0;
   }
+}
+
+.diploma-main.title,
+.certificate-title.title {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.diploma-details,
+.certificate-issuer {
+  font-size: 0.85rem;
 }
 
 @media screen and (max-width: 1490px) {

@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Divider from '../shared/divider/Divider';
 import { Certificates, Diplomas } from './data';
 import './Education.css';
 
@@ -8,11 +9,12 @@ const Education: FC = () => {
 
   return (
     <div className="education">
-      <h3>Education</h3>
+      <h3 className="title">Education</h3>
+      <Divider />
       <div className="diplomas">
         {Diplomas.map((diploma, i) => (
           <div className="diploma" key={i}>
-            <div className="diploma-head">
+            <div className="diploma-main title">
               <span className="qualification">
                 <strong>{diploma.qualification}</strong>
               </span>
@@ -21,13 +23,15 @@ const Education: FC = () => {
                 <strong>{diploma.subject}</strong>
               </span>
             </div>
-            <div className="insitution">
+            <div className="diploma-details">
               <span className="short-name">
                 {diploma.institution.shortName}
               </span>
-              <span className="full-name">
-                ({diploma.institution.fullName})
-              </span>
+              <div className="hint">
+                <span className="full-name">
+                  {diploma.institution.fullName}
+                </span>
+              </div>
               <span>{diploma.completionYear}</span>
             </div>
           </div>
@@ -36,13 +40,13 @@ const Education: FC = () => {
       <div className="certificates">
         {Certificates.map((certificate, i) => (
           <div className="certificate" key={i}>
-            <div className="certificate-title">
+            <div className="certificate-title title">
               <a href={certificate.link}>
                 <h4>{certificate.title}</h4>
               </a>
             </div>
             <div className="certificate-issuer">
-              <span>Issued on:</span>
+              <span>Issued on</span>
               <span className="date">
                 <em>{formatDate(certificate.issuedOn)}</em>
               </span>
