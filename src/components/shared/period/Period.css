@@ -13,3 +13,24 @@
 .period span em {
   font-style: normal;
 }
+
+.present-container {
+  position: relative;
+}
+
+.date-hint {
+  display: none;
+}
+
+.present-container:hover .date-hint {
+  display: block;
+  position: absolute;
+  top: -1.2rem;
+  right: 0;
+  background-color: blanchedalmond;
+  border: 1px solid black;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  text-wrap: nowrap;
+}

@@ -18,6 +18,13 @@ const Period: FC<PeriodProperties> = ({
   const formatDate = (date: Date): string =>
     date.toLocaleString(localization, { month: 'long', year: 'numeric' });
 
+  const formatFullDate = (date: Date): string =>
+    date.toLocaleString(localization, {
+      month: 'long',
+      day: 'numeric',
+      year: '2-digit',
+    });
+
   return (
     <div className="period">
       <span className="date">
@@ -29,8 +36,11 @@ const Period: FC<PeriodProperties> = ({
           <em>{formatDate(endedDate!)}</em>
         </span>
       ) : (
-        <span>
+        <span className="present-container">
           <em>present</em>
+          {endedDate && (
+            <div className="date-hint">Ends on {formatFullDate(endedDate)}</div>
+          )}
         </span>
       )}
     </div>
