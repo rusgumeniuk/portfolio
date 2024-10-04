@@ -3,9 +3,8 @@
   font-size: 0.9rem;
 }
 
-
-@media (max-width: 500px){
-  .summary-text{
+@media (max-width: 500px) {
+  .summary-text {
     font-size: 0.8rem;
   }
 }

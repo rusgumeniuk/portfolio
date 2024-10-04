@@ -12,10 +12,14 @@ interface IconProperties {
 const Icon: FC<IconProperties> = ({ iconTitle, text, link }) => {
   return (
     <div className="icon-container">
-      <FontAwesomeIcon className='icon' icon={iconTitle} />
-      <a href={link} className="link">
-        {text}
-      </a>
+      <FontAwesomeIcon className="icon" icon={iconTitle} />
+      {link ? (
+        <a href={link} className="link">
+          {text}
+        </a>
+      ) : (
+        <span>{text}</span>
+      )}
     </div>
   );
 };

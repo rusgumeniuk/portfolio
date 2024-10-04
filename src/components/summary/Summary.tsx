@@ -7,6 +7,7 @@ const Summary: FC = () => {
   return (
     <div className="summary">
       <h3 className="title">Summary</h3>
+      {/* TODO: use h2, but add styles */}
       <Divider />
       <p className="summary-text">{AboutMe}</p>
     </div>
