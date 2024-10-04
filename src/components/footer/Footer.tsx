@@ -10,7 +10,7 @@ const Footer: FC = () => {
       <div className="designer">
         <span>Designed by</span>
         <span>{DesignerData.Name}</span>
-        <a href={DesignerData.Profile}>
+        <a href={DesignerData.Profile} aria-label="Designer's profile">
           <FontAwesomeIcon icon={faLink} />
         </a>
       </div>
