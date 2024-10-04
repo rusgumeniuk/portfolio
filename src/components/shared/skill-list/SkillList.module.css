@@ -21,3 +21,23 @@
 .skill:not(:last-child)::after {
   content: ' ·';
 }
+
+.hint {
+  display: none;
+  background-color: blanchedalmond;
+  border: 1px solid black;
+  border-radius: 1rem;
+  font-size: 0.6rem;
+  padding: 0.15rem;
+}
+
+.additional-skill {
+  position: relative;
+}
+
+.additional-skill:hover .hint {
+  display: flex;
+  position: absolute;
+  top: -1rem;
+  left: 1.5rem;
+}
