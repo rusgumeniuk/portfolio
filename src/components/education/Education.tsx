@@ -8,7 +8,7 @@ const Education: FC = () => {
     date.toLocaleString('default', { dateStyle: 'short' });
 
   return (
-    <div className="education">
+    <div className="education-container">
       <h3 className="title">Education</h3>
       <Divider />
       <div className="diplomas">

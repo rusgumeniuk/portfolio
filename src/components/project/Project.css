@@ -60,3 +60,10 @@ button.disabled > *:hover {
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 720px) {
+  .responsibilities {
+    margin: 0;
+    margin-right: 0.5rem;
+  }
+}

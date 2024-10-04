@@ -92,3 +92,21 @@ h4 {
     padding: 0;
   }
 }
+
+@media (max-width: 720px) {
+  .diploma {
+    word-break: break-all;
+  }
+
+  .education-container > .title {
+    margin: 0;
+    margin-left: 0.4rem;
+  }
+
+  .diploma-main.title,
+  .certificate-title.title,
+  .diploma-details,
+  .certificate-issuer {
+    font-size: 0.8rem;
+  }
+}

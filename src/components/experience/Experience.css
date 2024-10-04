@@ -12,7 +12,7 @@
   text-wrap: nowrap;
 }
 
-.job-period{
+.job-period {
   font-size: 0.9rem;
 }
 
@@ -46,5 +46,11 @@
   .job-period {
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+@media (max-width: 500px) {
+  .job-position {
+    text-wrap: wrap;
   }
 }

@@ -27,3 +27,15 @@
 .roles > div:not(:last-child)::after {
   content: ' | ';
 }
+
+@media (max-width: 500px) {
+  .personal-info {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .personal-info {
+    font-size: 0.8rem;
+  }
+}

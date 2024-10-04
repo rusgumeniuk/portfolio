@@ -5,7 +5,7 @@ import './Languages.css';
 
 const Languages: FC = () => {
   return (
-    <div className="languages">
+    <div className="languages-container">
       <h3 className="title">Languages</h3>
       <Divider />
       {/* TODO: create SectionTitle component? */}

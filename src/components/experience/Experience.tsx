@@ -31,7 +31,6 @@ const Experience: FC = () => {
             </div>
           </div>
           {job.additionalResponsibilities.length > 0 && (
-            // TODO: make this section collapsible when press on job-head
             <div className="additional-responsibilities-container">
               <span className="title">Additional responsibilities:</span>
               <ul className="additional-responsibilities">
