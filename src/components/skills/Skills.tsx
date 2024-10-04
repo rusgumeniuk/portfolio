@@ -15,7 +15,6 @@ const Skills: FC = () => {
           <div className="skill-group" key={group.title}>
             <span className="skill-group-title">{group.title}</span>
             <div className="skill-list-container">
-              {/* TODO: mark skills with non commerce experience in a different color */}
               <SkillList
                 mainSkills={group.skills
                   .filter(
@@ -26,6 +25,7 @@ const Skills: FC = () => {
                   .filter((x) => x.levelOfUsage === 'NonCommercial')
                   .map((x) => x.title)}
                 additionalSkillsClassName={styles.additional}
+                additionalSkillsNote="For Educational Purposes"
               />
             </div>
           </div>
