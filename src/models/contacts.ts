@@ -1,7 +1,7 @@
 export interface Contacts {
   email: string;
   linkedIn: string;
-  site: string | null;
+  site: string;
   github: string;
   location: string;
 }

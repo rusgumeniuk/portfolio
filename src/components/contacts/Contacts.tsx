@@ -29,11 +29,9 @@ const Contacts: FC = () => {
       <div className="contact link">
         <Icon iconTitle={faGithub} link={ContactsData.github} text="GitHub" />
       </div>
-      {ContactsData.site && (
-        <div className="contact link">
-          <Icon iconTitle={faGlobe} link={ContactsData.site} text="Site" />
-        </div>
-      )}
+      <div className="contact link">
+        <Icon iconTitle={faGlobe} link={ContactsData.site} text="Site" />
+      </div>
       <div className="contact location">
         <Icon iconTitle={faLocationDot} text={ContactsData.location} />
       </div>
