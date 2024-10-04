@@ -17,6 +17,7 @@ export const Certificates: Certificate[] = [
     title: 'Azure 204',
     issuedOn: new Date(2021, 2, 25),
     issuer: 'Microsoft',
+    link: 'https://drive.google.com/file/d/1BNJOT0Rek94pvGx0sXwZwza17ikSPbGX/view?usp=sharing',
   },
 ];
 
