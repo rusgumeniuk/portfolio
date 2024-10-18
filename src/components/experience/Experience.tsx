@@ -2,6 +2,7 @@ import { FC } from 'react';
 import Project from '../project/Project';
 import Divider from '../shared/divider/Divider';
 import Period from '../shared/period/Period';
+import { sortByDateDesc } from '../shared/utils/dateUtils';
 import { Jobs as JobsData } from './data';
 import './Experience.css';
 
@@ -10,8 +11,10 @@ const Experience: FC = () => {
     <div className="experience">
       <h3 className="title">Experience</h3>
       <Divider />
-      {JobsData.map((job, i) => (
-        <div className="job" key={i}>
+      {JobsData.sort((x, y) =>
+        sortByDateDesc(x.company.startedOn, y.company.startedOn),
+      ).map((job, jobIndex) => (
+        <div className="job" key={jobIndex}>
           <div className="job-head">
             <div className="job-period">
               <Period
@@ -34,16 +37,18 @@ const Experience: FC = () => {
             <div className="additional-responsibilities-container">
               <span className="title">Additional responsibilities:</span>
               <ul className="additional-responsibilities">
-                {job.additionalResponsibilities.map((resp, i) => (
-                  <li key={i}>{resp}</li>
+                {job.additionalResponsibilities.map((resp, respIndex) => (
+                  <li key={respIndex}>{resp}</li>
                 ))}
               </ul>
             </div>
           )}
           <div className="projects-container">
-            {job.projects.map((project, i) => (
-              <Project key={i} project={project} />
-            ))}
+            {job.projects
+              .sort((x, y) => sortByDateDesc(x.startedOn, y.startedOn))
+              .map((project, projectIndex) => (
+                <Project key={projectIndex} project={project} />
+              ))}
           </div>
         </div>
       ))}

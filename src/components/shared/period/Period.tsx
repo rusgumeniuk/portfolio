@@ -12,8 +12,7 @@ const Period: FC<PeriodProperties> = ({
   endedDate,
   localization,
 }) => {
-  const isCompleted = (date: Date | null): boolean =>
-    date !== null && date <= new Date();
+  const isCompleted = (date: Date): boolean => date <= new Date();
 
   const formatDate = (date: Date): string =>
     date.toLocaleString(localization, { month: 'long', year: 'numeric' });
@@ -31,9 +30,9 @@ const Period: FC<PeriodProperties> = ({
         <em>{formatDate(startedDate)}</em>
       </span>
       <span>-</span>
-      {isCompleted(endedDate) ? (
+      {endedDate && isCompleted(endedDate) ? (
         <span className="date">
-          <em>{formatDate(endedDate!)}</em>
+          <em>{formatDate(endedDate)}</em>
         </span>
       ) : (
         <span className="present-container">
