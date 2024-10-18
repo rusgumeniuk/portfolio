@@ -50,7 +50,6 @@ export const SkillGroups: SkillGroup[] = [
     title: 'tools',
     skills: [
       { title: Tools.OpenSearch, levelOfUsage: 'Commercial' },
-      { title: Tools.Postman, levelOfUsage: 'Commercial' },
       { title: Tools.AWS, levelOfUsage: 'Commercial' },
       { title: Tools.Docker, levelOfUsage: 'Commercial' },
       { title: Tools.VisualStudio, versions: ['2022'] },
