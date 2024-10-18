@@ -85,7 +85,7 @@ export const Jobs: Job[] = [
     ],
     additionalResponsibilities: [
       'Participate in the internal academy as a lecture owner, check homework assignments',
-      'Participate in the internal mentorship programm as a mentor',
+      'Participate in the internal mentorship program as a mentor',
     ],
   },
 ];
