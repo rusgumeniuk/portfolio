@@ -1,4 +1,4 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import {
   faEnvelope,
   faGlobe,
@@ -19,14 +19,13 @@ const Contacts: FC = () => {
           text="Email"
         />
       </div>
-      {/* TODO: uncomment
-       <div className="contact link">
+      <div className="contact link">
         <Icon
           iconTitle={faLinkedin}
           link={ContactsData.linkedIn}
           text="LinkedIn"
         />
-      </div> */}
+      </div>
       <div className="contact link">
         <Icon iconTitle={faGithub} link={ContactsData.github} text="GitHub" />
       </div>
