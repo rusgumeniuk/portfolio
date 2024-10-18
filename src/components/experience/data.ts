@@ -14,6 +14,11 @@ export const Jobs: Job[] = [
         domain: 'Sports data aggregator',
         startedOn: new Date(2020, 7),
         endedOn: new Date(2021, 0),
+        team: {
+          communicationLanguage: 'en',
+          membersNumber: 4,
+          composition: 'International',
+        },
         technologies: [
           Technologies.React,
           Technologies.Redux,
@@ -34,6 +39,10 @@ export const Jobs: Job[] = [
         title: '#2',
         startedOn: new Date(2021, 0),
         endedOn: new Date(2021, 2),
+        team: {
+          membersNumber: 1,
+          composition: 'Local',
+        },
         technologies: [
           Technologies.React,
           Technologies.Redux,
@@ -51,6 +60,11 @@ export const Jobs: Job[] = [
         domain: 'Charge Point Management',
         startedOn: new Date(2021, 2),
         endedOn: new Date(2024, 9, 15),
+        team: {
+          communicationLanguage: 'en',
+          membersNumber: 7,
+          composition: 'International',
+        },
         technologies: [
           Technologies.AspNetApi,
           Technologies.EntityFrameworkCore,

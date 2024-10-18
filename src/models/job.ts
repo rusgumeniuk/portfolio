@@ -11,6 +11,12 @@ export interface Company {
   endedOn: Date | null;
 }
 
+export interface ProjectTeam {
+  membersNumber: number;
+  composition: 'International' | 'Local';
+  communicationLanguage?: 'en' | null;
+}
+
 export interface JobProject {
   title: string;
   domain?: string;
@@ -18,4 +24,5 @@ export interface JobProject {
   endedOn: Date | null;
   technologies: string[];
   responsibilities: string[];
+  team: ProjectTeam;
 }
