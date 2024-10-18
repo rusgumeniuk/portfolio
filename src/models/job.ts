@@ -13,6 +13,7 @@ export interface Company {
 
 export interface JobProject {
   title: string;
+  domain?: string;
   startedOn: Date;
   endedOn: Date | null;
   technologies: string[];

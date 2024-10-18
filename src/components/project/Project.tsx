@@ -19,6 +19,7 @@ const Project: FC<ProjectProperties> = ({ project }) => {
             localization="en"
           />
         </div>
+        {/* TODO: display project's domain */}
         <div className="project-title title">
           <strong>Project &quot;{project.title}&quot;</strong>
         </div>

@@ -44,6 +44,7 @@ const Experience: FC = () => {
             </div>
           )}
           <div className="projects-container">
+            {/* TODO: extract project-list component */}
             {job.projects
               .sort((x, y) => sortByDateDesc(x.startedOn, y.startedOn))
               .map((project, projectIndex) => (

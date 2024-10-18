@@ -30,7 +30,7 @@ export const Jobs: Job[] = [
         ],
       },
       {
-        title: '#2 (internal project)',
+        title: '#2',
         startedOn: new Date(2021, 0),
         endedOn: new Date(2021, 2),
         technologies: [
@@ -47,6 +47,7 @@ export const Jobs: Job[] = [
       },
       {
         title: '#3',
+        domain: 'Charge Point Management',
         startedOn: new Date(2021, 2),
         endedOn: new Date(2024, 9, 15),
         technologies: [
