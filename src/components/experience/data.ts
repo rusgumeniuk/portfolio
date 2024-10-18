@@ -11,6 +11,7 @@ export const Jobs: Job[] = [
     projects: [
       {
         title: '#1',
+        domain: 'Sports data aggregator',
         startedOn: new Date(2020, 7),
         endedOn: new Date(2021, 0),
         technologies: [
