@@ -1,5 +1,5 @@
 import { Job } from '../../models/job';
-import { Technologies } from '../../models/skills';
+import { Technologies, Tools } from '../../models/skills';
 export const Jobs: Job[] = [
   {
     company: {
@@ -58,7 +58,7 @@ export const Jobs: Job[] = [
           Technologies.Cqrs,
           Technologies.DomainDrivenDesign,
           Technologies.Angular,
-          Technologies.AWS,
+          Tools.AWS,
           Technologies.OpenTelemetry,
           Technologies.UnitTests,
           Technologies.IntegrationTests,

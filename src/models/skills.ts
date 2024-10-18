@@ -1,11 +1,7 @@
 export interface Skill {
   title: string;
   levelOfUsage?: 'NonCommercial' | 'Commercial';
-}
-
-export interface SkillGroup {
-  title: string;
-  skills: Skill[];
+  versions?: string[];
 }
 
 export const Technologies = {
@@ -30,15 +26,25 @@ export const Technologies = {
   UnitTests: 'Unit testing',
   IntegrationTests: 'Integration testing',
   OpenTelemetry: 'OpenTelemetry',
-  Docker: 'Docker',
   MassTransit: 'MassTransit',
-  AWS: 'AWS',
   FluentValidation: 'FluentValidation',
   FluentAssertion: 'FluentAssertion',
-  OpenSearch: 'OpenSearch',
   WPF: 'WPF',
   Xamarin: 'Xamarin',
   ModelViewViewModel: 'MVVM',
-  Postman: 'Postman',
+  Blazor: 'Blazor',
 };
-// TODO: split into tools/apps
+
+export const Tools = {
+  Docker: 'Docker',
+  AWS: 'AWS',
+  OpenSearch: 'OpenSearch',
+  Postman: 'Postman',
+  Confluence: 'Confluence',
+  Jira: 'Jira',
+  VisualStudio: 'Visual Studio',
+  VsCode: 'VS Code',
+  Git: 'Git',
+  GitHub: 'GitHub',
+  GitLab: 'GitLab',
+};

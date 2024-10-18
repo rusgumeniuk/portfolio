@@ -1,4 +1,9 @@
-import { SkillGroup, Technologies } from '../../models/skills';
+import { Skill, Technologies, Tools } from '../../models/skills';
+
+interface SkillGroup {
+  title: string;
+  skills: Skill[];
+}
 
 export const SkillGroups: SkillGroup[] = [
   {
@@ -17,6 +22,7 @@ export const SkillGroups: SkillGroup[] = [
       { title: Technologies.Xamarin, levelOfUsage: 'NonCommercial' },
       { title: Technologies.WPF, levelOfUsage: 'NonCommercial' },
       { title: Technologies.ModelViewViewModel, levelOfUsage: 'NonCommercial' },
+      { title: Technologies.Blazor, levelOfUsage: 'NonCommercial' },
     ],
   },
   {
@@ -41,13 +47,20 @@ export const SkillGroups: SkillGroup[] = [
     ],
   },
   {
-    title: 'general',
+    title: 'tools',
     skills: [
-      { title: Technologies.OpenSearch, levelOfUsage: 'Commercial' },
-      { title: Technologies.Postman, levelOfUsage: 'Commercial' },
-      { title: Technologies.AWS, levelOfUsage: 'Commercial' },
-      { title: Technologies.Docker, levelOfUsage: 'Commercial' },
+      { title: Tools.OpenSearch, levelOfUsage: 'Commercial' },
+      { title: Tools.Postman, levelOfUsage: 'Commercial' },
+      { title: Tools.AWS, levelOfUsage: 'Commercial' },
+      { title: Tools.Docker, levelOfUsage: 'Commercial' },
+      { title: Tools.VisualStudio, versions: ['2022'] },
+      { title: Tools.Git, levelOfUsage: 'Commercial' },
+      { title: Tools.GitHub, levelOfUsage: 'Commercial' },
+      { title: Tools.Confluence, levelOfUsage: 'Commercial' },
+      { title: Tools.Jira, levelOfUsage: 'Commercial' },
+      { title: Tools.VsCode, levelOfUsage: 'Commercial' },
+      { title: Tools.GitLab, levelOfUsage: 'Commercial' },
+      { title: Tools.Postman },
     ],
   },
-  { title: 'soft', skills: [{ title: 'Confluence' }] },
 ];
