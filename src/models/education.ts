@@ -2,7 +2,7 @@ export interface Certificate {
   title: string;
   issuedOn: Date;
   issuer: string;
-  link?: string
+  link?: string;
 }
 
 export interface Diploma {
@@ -10,7 +10,7 @@ export interface Diploma {
   completionYear: number;
   subject: string;
   institution: {
-    shortName: string,
-    fullName: string
-  }
+    shortName: string;
+    fullName: string;
+  };
 }

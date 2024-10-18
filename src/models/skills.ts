@@ -41,5 +41,4 @@ export const Technologies = {
   ModelViewViewModel: 'MVVM',
   Postman: 'Postman',
 };
-
 // TODO: split into tools/apps

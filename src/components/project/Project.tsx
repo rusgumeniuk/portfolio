@@ -20,7 +20,7 @@ const Project: FC<ProjectProperties> = ({ project }) => {
           />
         </div>
         <div className="project-title title">
-          <strong>Project "{project.title}"</strong>
+          <strong>Project &quot;{project.title}&quot;</strong>
         </div>
       </div>
       <div className="project-technologies">

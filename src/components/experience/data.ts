@@ -1,6 +1,5 @@
 import { Job } from '../../models/job';
 import { Technologies } from '../../models/skills';
-
 export const Jobs: Job[] = [
   {
     company: {

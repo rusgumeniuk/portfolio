@@ -18,7 +18,7 @@ const Skills: FC = () => {
               <SkillList
                 mainSkills={group.skills
                   .filter(
-                    (x) => !x.levelOfUsage || x.levelOfUsage === 'Commercial'
+                    (x) => !x.levelOfUsage || x.levelOfUsage === 'Commercial',
                   )
                   .map((x) => x.title)}
                 additionalSkills={group.skills
